@@ -6,6 +6,7 @@
 - [[#personal-info][Personal info]]
 - [[#appearance][Appearance]]
 - [[#org-mode-settings][Org mode settings]]
+- [[#some-comments-i-might-need-lol][Some comments I might need lol]]
 
 * Personal info
 
@@ -37,6 +38,9 @@
 (setq org-directory "~/org/")
 #+end_src
 
+* Some comments I might need lol
+
+#+begin_src emacs-lisp :tangle ~/.doom.d/config.el
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -53,3 +57,4 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+#+end_src
