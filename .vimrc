@@ -29,12 +29,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " nord theme
 Plug 'arcticicestudio/nord-vim'
 
-" dracula theme
-packadd! dracula
-syntax enable
-colorscheme dracula
-
 " Initialize plugin system
 call plug#end()
 
-colorscheme nord
