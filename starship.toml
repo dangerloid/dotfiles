@@ -57,3 +57,6 @@ symbol = " "
 
 [rust]
 symbol = " "
+
+[lua]
+symbol = "☽ "
