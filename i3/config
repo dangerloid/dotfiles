@@ -328,8 +328,7 @@ assign [class="Vlc|vlc"]                                                        
 assign [class="Vmplayer|VirtualBox"]						    → 6
 
 # Workspace 8 file managers
-assign [class="Nemo|Thunar|Caja|nautilus|Nautilus|pcmanfm"]                                 → 7
-for_window [class="pcmanfm"] move to workspace 7
+assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 7
 
 # Workspace 9 email clients
 #assign [class="Geary|Evolution"]                                                    → 9
@@ -356,7 +355,6 @@ exec_always --no-startup-id autotiling
 
 #browser
 #exec --no-startup-id vivaldi-stable
-for_window [class="Vivaldi-stable"] focus
 
 #text-editor
 #exec --no-startup-id geany
@@ -373,7 +371,7 @@ for_window [class="Vivaldi-stable"] focus
 for_window [class="Spotify"] focus
 
 # set wallpaper
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --restore &
 
 
 
@@ -417,7 +415,7 @@ exec --no-startup-id volumeicon
 #exec --no-startup-id conky -c ~/.config/i3/system-overview
 
 #feh sets wallpaper
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 
 #Polybar
 #exec_always --no-startup-id ~/.config/polybar/launch.sh &
