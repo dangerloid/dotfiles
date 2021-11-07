@@ -4,17 +4,14 @@
 ;; theme handling
 (setq doom-theme 'doom-dracula)
 ;; font configs
-(setq doom-font (font-spec :family "Fira Code Nerd Font" :size 14)
-      doom-variable-pitch-font (font-spec :family "Fira Code Nerd Font" :size 14))
+(setq doom-font (font-spec :family "Fira Code" :size 14)
+      doom-variable-pitch-font (font-spec :family "Fira Code" :size 14))
 
 ;; org directory
 (setq org-directory "~/org/")
 
 ;; line numbers
 (setq display-line-numbers-type t)
-
-;; org directory
-(setq org-directory "~/org/")
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
