@@ -1,8 +1,10 @@
+zmodload zsh/zprof
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.emacs.d/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ruko/.oh-my-zsh"
+export ZSH="/home/rk/.oh-my-zsh"
 
 # set theme
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
@@ -60,7 +62,7 @@ export LANG=it_IT.UTF-8
 # fi
 
 # Compilation flags
-export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch x86_64"
 
 #
 # aliases
@@ -78,10 +80,6 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-# pacman
-alias pacman='sudo pacman --color auto'
-alias update='sudo pacman -Syyu'
-
 # git
 alias gpom='git push origin main'
 
@@ -98,7 +96,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
 
-zstyle :compinstall filename '/home/ruko/.zshrc'
+zstyle :compinstall filename '/home/rk/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -131,9 +129,8 @@ ex ()
 }
 
 # start sysfetch
-fet.sh
+pfetch
 
 # starship
 eval "$(starship init zsh)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
