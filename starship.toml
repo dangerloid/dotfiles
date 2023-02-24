@@ -1,5 +1,14 @@
-[line_break]
-disabled = false
+format = """
+$username@$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_status\
+$rust\
+$lua\
+$python\
+$line_break\
+$character"""
 
 # blank line between prompts
 add_newline = true
@@ -7,15 +16,16 @@ add_newline = true
 # disable package module
 [package]
 disabled = false
-symbol = " "
+symbol = "pack "
 
 # single line prompt
 [line_break]
-disabled = true
+disabled = false 
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            
-success_symbol = "[➜](bold green)"
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
 
 ### git ###
 
@@ -48,18 +58,25 @@ disabled = false
 [username]
 style_user = "bold white"
 style_root = "bold red"
-format = "[$user ]($style)"
+format = "[$user]($style)"
 disabled = false
 show_always = true
+
+# host
+[hostname]
+ssh_only = false
+format = "[$hostname ]($style)"
+style = "bold white"
+disabled = false
 
 [directory]
 read_only = " "
 
 [python]
-symbol = " "
+symbol = "py "
 
 [rust]
-symbol = " "
+symbol = "rs "
 
 [lua]
-symbol = "☽ "
+symbol = "lua "
