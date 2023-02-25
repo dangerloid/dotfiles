@@ -4,11 +4,15 @@ $directory\
 $git_branch\
 $git_commit\
 $git_status\
+$line_break\
+$character"""
+
+# prompts on the right
+right_format = """
 $rust\
 $lua\
 $python\
-$line_break\
-$character"""
+$nodejs"""
 
 # blank line between prompts
 add_newline = true
@@ -70,13 +74,20 @@ style = "bold white"
 disabled = false
 
 [directory]
-read_only = " "
+read_only = " ro"
 
 [python]
 symbol = "py "
+format = "[py ](bold yellow)"
 
 [rust]
 symbol = "rs "
+format = "[rs ](bold red)"
 
 [lua]
 symbol = "lua "
+format = "[lua ](bold blue)"
+
+[nodejs]
+symbol = "node "
+format = "[node ](bold green)"
